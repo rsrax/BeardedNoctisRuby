@@ -440,6 +440,42 @@
   },
   "tokenColors": [
     {
+      "name": "Changed",
+      "scope": [
+        "markup.changed",
+        "meta.diff.header.git",
+        "meta.diff.header.from-file",
+        "meta.diff.header.to-file"
+      ],
+      "settings": {
+        "foreground": "#a2bffc",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Deleted",
+      "scope": "markup.deleted.diff",
+      "settings": {
+        "foreground": "#EF535090",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Inserted",
+      "scope": "markup.inserted.diff",
+      "settings": {
+        "foreground": "#addb67ff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Global settings",
+      "settings": {
+        "background": "#011627",
+        "foreground": "#d6deeb"
+      }
+    },
+    {
       "name": "COMMENT",
       "scope": [
         "comment",
@@ -551,8 +587,80 @@
         "keyword.control.def.ruby"
       ],
       "settings": {
-        "foreground": "#7EC10B",
+        "foreground": "#df769b",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keyword Operator",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#7fdbca",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Keyword Operator Relational",
+      "scope": "keyword.operator.relational",
+      "settings": {
+        "foreground": "#c792ea",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Keyword Operator Assignment",
+      "scope": "keyword.operator.assignment",
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "name": "Keyword Operator Arithmetic",
+      "scope": "keyword.operator.arithmetic",
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "name": "Keyword Operator Bitwise",
+      "scope": "keyword.operator.bitwise",
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "name": "Keyword Operator Increment",
+      "scope": "keyword.operator.increment",
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "name": "Keyword Operator Ternary",
+      "scope": "keyword.operator.ternary",
+      "settings": {
+        "foreground": "#c792ea"
+      }
+    },
+    {
+      "name": "Double-Slashed Comment",
+      "scope": "comment.line.double-slash",
+      "settings": {
+        "foreground": "#637777"
+      }
+    },
+    {
+      "name": "Object",
+      "scope": "object",
+      "settings": {
+        "foreground": "#cdebf7"
+      }
+    },
+    {
+      "name": "Null",
+      "scope": "constant.language.null",
+      "settings": {
+        "foreground": "#ff5874"
       }
     },
     {
@@ -616,7 +724,7 @@
         "source.scala entity.name.import"
       ],
       "settings": {
-        "foreground": "#DFA316"
+        "foreground": "#e4b781"
       }
     },
     {
@@ -688,14 +796,13 @@
         "source.scala entity.name.class"
       ],
       "settings": {
-        "foreground": "#F18805"
+        "foreground": "#d67e5c"
       }
     },
     {
       "name": "CONSTANT",
       "scope": [
         "constant",
-        "variable.other.constant",
         "support.constant",
         "punctuation.definition.entity",
         "constant.character.entity",
@@ -707,7 +814,6 @@
         "storage.type.scala",
         "entity.helper.apacheconf",
         "variable.language.crystal",
-        "punctuation.definition.constant",
         "support.constant punctuation.definition.variable",
         "constant.character.math",
         "support.class.math",
@@ -729,7 +835,25 @@
         "source.vue meta.directive punctuation.separator.key-value"
       ],
       "settings": {
-        "foreground": "#F92A82"
+        "foreground": "#d5971a"
+      }
+    },
+    {
+      "name": "Built-in constant",
+      "scope": [
+        "constant.language",
+        "punctuation.definition.constant",
+        "variable.other.constant"
+      ],
+      "settings": {
+        "foreground": "#647bfd"
+      }
+    },
+    {
+      "name": "Constant Character Escape",
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "#F78C6C"
       }
     },
     {
@@ -788,7 +912,7 @@
         "source.tf support.class.variable"
       ],
       "settings": {
-        "foreground": "#FF5E5B"
+        "foreground": "#e66533"
       }
     },
     {
@@ -825,14 +949,20 @@
         "text.tex markup.raw"
       ],
       "settings": {
-        "foreground": "#D6EEFF"
+        "foreground": "#16b673"
+      }
+    },
+    {
+      "name": "RegExp String",
+      "scope": ["string.regexp", "string.regexp keyword.other"],
+      "settings": {
+        "foreground": "#1155af"
       }
     },
     {
       "name": "NUMBER",
       "scope": [
         "constant.numeric",
-        "constant.language",
         "punctuation.separator.decimal.period.php",
         "keyword.operator.null-conditional.cs",
         "punctuation.separator.question-mark.cs",
@@ -872,7 +1002,14 @@
         "source.tf support.class"
       ],
       "settings": {
-        "foreground": "#543ad8"
+        "foreground": "#16a3b6"
+      }
+    },
+    {
+      "name": "Comma in functions",
+      "scope": "meta.function punctuation.separator.comma",
+      "settings": {
+        "foreground": "#bd21d1"
       }
     },
     {
@@ -910,7 +1047,7 @@
         "entity.name.scope-resolution.function.call"
       ],
       "settings": {
-        "foreground": "#009BF5"
+        "foreground": "#3471e2"
       }
     },
     {
