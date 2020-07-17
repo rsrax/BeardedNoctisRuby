@@ -1,0 +1,22 @@
+{
+  "name": "BeardedNoctisRuby",
+  "displayName": "Bearded Noctis Ruby",
+  "description": "Something i came up with because i needed a focused theme which also offered proper syntax highlighting and italicisation.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Bearded Noctis Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Bearded Noctis Ruby-color-theme.json"
+      }
+    ]
+  },
+  "publisher": "RaviSharma"
+}
