@@ -471,7 +471,6 @@
     {
       "name": "Global settings",
       "settings": {
-        "background": "#011627",
         "foreground": "#d6deeb"
       }
     },
@@ -595,7 +594,7 @@
       "name": "Keyword Operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#7fdbca",
+        "foreground": "#7ec42e",
         "fontStyle": ""
       }
     },
@@ -685,7 +684,6 @@
         "source.cpp",
         "source.go",
         "source.python",
-        "meta.function-call.arguments.python",
         "source.ruby",
         "source.coffee.embedded.source",
         "source.coffee",
@@ -728,10 +726,13 @@
       }
     },
     {
-      "name": "IMPORT",
-      "scope": [],
+      "name": "ARGUMENTS",
+      "scope": [
+        "meta.function-call.arguments.python",
+        "meta.function-call.arguments"
+      ],
       "settings": {
-        "foreground": "#EC2049"
+        "foreground": "#01cf6f"
       }
     },
     {
@@ -975,7 +976,7 @@
         "source.toml constant"
       ],
       "settings": {
-        "foreground": "#533A71"
+        "foreground": "#006eff"
       }
     },
     {
@@ -1002,7 +1003,7 @@
         "source.tf support.class"
       ],
       "settings": {
-        "foreground": "#16a3b6"
+        "foreground": "#098ae0"
       }
     },
     {
